@@ -1,0 +1,440 @@
+/* Estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  /* Barra de Navegación */
+  .navbar {
+    background-color: #6b2d5c; /* Color principal */
+    padding: 0.5rem 1rem;
+    justify-content: center;
+  }
+  
+  .navbar-brand img {
+    width: 80px;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos del navbar */
+    margin: 0; /* Elimina los márgenes del navbar */
+  }
+  .navbar-nav .nav-link {
+    color: #191126;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #a2d825 ; /* Color secundario */
+  }
+  
+  /* Sección Hero */
+  #inicio {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: white;
+    position: relative;
+  }
+  /* Agrega un fondo oscuro sobre el #inicio */
+  #inicio::after {  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurecer fondo */
+    z-index: 1;  /* Coloca el pseudo-elemento debajo de otros elementos */
+  }
+  
+  #inicio h1 {
+    font-size: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+    z-index: 2;
+    position: relative;
+  }
+  
+  #inicio p {
+    font-size: 2rem;
+    color: #a2d825; /* Color secundario */
+    z-index: 2;
+    position: relative;
+  }
+  
+  #inicio img {
+    width: 40%;
+    margin-top: 1.5rem;
+    z-index: 2;
+    position: relative;
+  }
+  #about {
+    font-size: 1.5rem;
+  }
+  #about h2 {
+    font-size: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+  }
+
+  /* Secciones generales */
+  section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .seccion-oscura {
+    background-color: #191126; /* Color principal */
+    color: white;
+  }
+  
+  .seccion-clara {
+    background-color: #f8f9fa;
+  }
+  
+  .seccion-titulo {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .seccion-texto {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 800px;
+  }
+  #productos p {
+        font-size: 1.5rem;
+        font-family: 'Rubik Dirt', cursive;
+  }
+  
+  /* Sección de Procesos */
+  #procesos .row {
+    margin-top: 3rem;
+  }
+  
+  #procesos .col-md-4 {
+    margin-bottom: 2rem;
+  }
+  
+  #procesos i {
+    font-size: 3rem;
+  }
+  #procesos h2 {
+    font-size: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  #procesos p {
+    font-size: 1.5rem;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  #procesos h5 {
+    font-weight: 600;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  /* Estilo para la sección de procesos */
+#procesos .proceso {
+  padding: 2rem; /* Espaciado interno de 2rem */
+  background-color: #f8f9fa; /* Fondo original en un tono claro */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centra el contenido */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el fondo y transformación */
+  cursor: pointer; /* Cambia el cursor a un puntero para indicar interactividad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+}
+
+/* Efectos al pasar el mouse sobre .proceso */
+#procesos .proceso:hover {
+  background-color: #a2d825; /* Cambia el fondo al pasar el mouse */
+  transform: scale(1.05); /* Efecto de ampliación al hacer hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+
+#procesos .proceso i {
+  font-size: 3rem; /* Tamaño de fuente grande para el ícono */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+/* Cambia el color del ícono al hacer hover */
+#procesos .proceso:hover i {
+  color: white; /* Cambia el color del ícono a blanco cuando se pasa el mouse */
+}
+
+/* Estilo para el título h5 dentro de .proceso */
+#procesos .proceso h5 {
+  font-weight: 600; 
+  margin-top: 1rem; /* Espaciado superior de 1rem */
+}
+
+/* Estilo para el párrafo p dentro de .proceso */
+#procesos .proceso p {
+  font-size: 1.1rem; /* Tamaño de fuente un poco mayor que el normal */
+  margin-top: 1rem; /* Espaciado superior de 1rem */
+  color: #666; /* Color gris para el texto */
+}
+
+/* Estilos para el encabezado h2 dentro de #procesos */
+#procesos h2 {
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
+}
+
+/* Estilos para los párrafos dentro de #procesos */
+#procesos p {
+  font-size: 1.2rem; /* Tamaño de fuente ligeramente mayor */
+  margin-bottom: 2rem; /* Espaciado inferior de 2rem */
+  color: #666; /* Color gris para el texto */
+}
+
+  
+  
+  /* Footer */
+  footer {
+    background-color: #6b2d5c; /* Color principal */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+
+  /* Estilos para el formulario de pedidos de producto */
+.form-container {
+    color: white;
+    background-color: #6b2d5c;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .form-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .btn-primary {
+    background-color: #a2d825;
+    color: black;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #a2d825;
+    color: #6b2d5c;
+    
+  }
+  
+  /* Sección de Productos - Carrusel */
+  #productos {
+    padding: 5rem 3rem;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #a2d825;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #191126;
+    border-radius: 50%;
+  }
+
+  /* Seccion de beneficios  */
+  .beneficios-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .beneficio {
+    position: relative; /* Necesario para posicionar la superposición (overlay) dentro de este contenedor */
+    overflow: hidden; /* Oculta las partes de los hijos que sobresalgan */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .beneficio img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block; /* Elimina el espacio en línea alrededor de las imágenes */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición suave al escalar */
+    border-radius: 10px; /* Asegura que las imágenes también tengan bordes redondeados */
+}
+  
+  .beneficio:hover img {
+    transform: scale(1.1); /* Ampliación de la imagen */
+  }
+  
+  .beneficio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Efecto de superposición oscuro */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Efecto suave para el cambio de opacidad */
+    border-radius: 10px;
+  }
+  
+  .beneficio:hover .overlay {
+    opacity: 1;
+  }
+  
+  .row {
+    margin: 0; /* Asegura que las filas no tengan márgenes extra */
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta imágenes en filas */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 1rem; /* Espacio entre imágenes */
+}
+
+.image-grid img {
+    width: 600px; /* Tamaño más grande */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 8px; /* (Opcional) Redondea las esquinas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Sombra inicial */
+}
+
+.image-grid img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+/* OPiniones del Carrusel */
+.testimonios{
+  padding: 40p 40px 80px 40px;
+}
+.testimonios .carousel{
+  max-width: 800px;
+}
+.carousel-item {
+  height: 500px;
+}
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonio-imagen{
+  height: 150px;
+  width: 150px;
+  margin:10px 10px 20px 10px;
+}
+.testimonio-texto{
+  max-width: 70%;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Rubik Dirt', cursive;
+}
+.testimonio-info{
+  font-weight: bold;
+  text-align: center;
+}
+.testimonio-info p{
+  margin-bottom: 0;
+}
+
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .hero-principal h1 {
+      font-size: 2rem;
+    }
+  
+    .seccion-titulo {
+      font-size: 1.8rem;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .hero-inferior img {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-principal h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-principal h3 {
+      font-size: 1rem;
+    }
+  }
+  
